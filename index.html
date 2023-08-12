@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <title> Calculator </title>
+        <link rel="icon" href="images/calc.png">
+
+        <script src="https://cdn.tailwindcss.com"> </script>
+    </head>
+
+    <body>
+        <section class="">
+            <h2 class="text-3xl text-center"> Calculator </h2>
+            <div class="mt-10 container bg-gray-400 mx-auto justify-center items-center max-w-sm">
+                <div class="p-10">
+                    <input type="text" class="input h-10 bg-white" id="result" disabled>
+
+                    <div class="mt-3 text-black">
+                        <button type="button" class="text-3xl box-border h-10 w-10 bg-gray-50 rounded-md" onclick="appendnumber('7')"> 7 </button>
+                        <button type="button" class="text-3xl box-border h-10 w-10 bg-gray-50 rounded-md" onclick="appendnumber('8')"> 8 </button>
+                        <button type="button" class="text-3xl box-border h-10 w-10 bg-gray-50 rounded-md" onclick="appendnumber('9')"> 9 </button>
+                        <button type="button" class="text-3xl box-border h-10 w-10 bg-gray-50 rounded-md" onclick="performoperation('+')"> + </button>
+                    </div>
+                
+                    <div class="mt-3 text-black">
+                        <button type="button" class="text-3xl box-border h-10 w-10 bg-gray-50 rounded-md" onclick="appendnumber('4')"> 4 </button>
+                        <button type="button" class="text-3xl box-border h-10 w-10 bg-gray-50 rounded-md" onclick="appendnumber('5')"> 5 </button>
+                        <button type="button" class="text-3xl box-border h-10 w-10 bg-gray-50 rounded-md" onclick="appendnumber('6')"> 6 </button>
+                        <button type="button" class="text-3xl box-border h-10 w-10 bg-gray-50 rounded-md" onclick="performoperation('-')">-</button>
+                    </div>
+
+                    <div class="mt-3 text-black">
+                        <button type="button" class="text-3xl box-border h-10 w-10 bg-gray-50 rounded-md" onclick="appendnumber('1')"> 1 </button>
+                        <button type="button" class="text-3xl box-border h-10 w-10 bg-gray-50 rounded-md" onclick="appendnumber('2')"> 2 </button>
+                        <button type="button" class="text-3xl box-border h-10 w-10 bg-gray-50 rounded-md" onclick="appendnumber('3')"> 3 </button>
+                        <button type="button" class="text-3xl box-border h-10 w-10 bg-gray-50 rounded-md" onclick="performoperation('*')"> * </button>
+                    </div>
+
+                    <div class="mt-3 text-black">
+                        <button type="button" class="text-3xl box-border h-10 w-10 bg-gray-50 rounded-md" onclick="appendnumber('0')"> 0 </button>
+                        <button type="reset" class="text-3xl box-border h-10 w-10 bg-gray-50 rounded-md" onclick="clearinput()"> C </button>
+                        <button type="button" class="text-3xl box-border h-10 w-10 bg-gray-50 rounded-md" onclick="calculateresult()"> = </button>
+                        <button type="button" class="text-3xl box-border h-10 w-10 bg-gray-50 rounded-md" onclick="performoperation('/')"> / </button>
+                    </div>
+                </div>        
+            </div>
+       </section>
+       <script src="functions.js"> </script>
+    </body>
+</html>
